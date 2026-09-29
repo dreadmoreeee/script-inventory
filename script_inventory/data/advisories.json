@@ -1,0 +1,93 @@
+{
+  "_comment": "Small, hand-checked table. 'affected' ranges are introduced <= version < fixed; a missing bound is open. kind is 'vulnerability' or 'eol'.",
+  "advisories": [
+    {
+      "library": "jquery",
+      "id": "CVE-2020-11022",
+      "kind": "vulnerability",
+      "summary": "XSS: HTML from untrusted sources passed to DOM manipulation methods (.html(), .append(), ...) may run code even after sanitizing",
+      "affected": [{"introduced": "1.2.0", "fixed": "3.5.0"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2020-11022", "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"]
+    },
+    {
+      "library": "jquery",
+      "id": "CVE-2020-11023",
+      "kind": "vulnerability",
+      "summary": "XSS: HTML containing <option> elements from untrusted sources passed to DOM manipulation methods may run code",
+      "affected": [{"introduced": "1.0.3", "fixed": "3.5.0"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2020-11023", "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"]
+    },
+    {
+      "library": "jquery",
+      "id": "CVE-2019-11358",
+      "kind": "vulnerability",
+      "summary": "Prototype pollution in jQuery.extend(true, {}, ...) through an unsanitized __proto__ property",
+      "affected": [{"fixed": "3.4.0"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2019-11358"]
+    },
+    {
+      "library": "jquery",
+      "id": "CVE-2015-9251",
+      "kind": "vulnerability",
+      "summary": "XSS: cross-domain Ajax requests without the dataType option execute text/javascript responses",
+      "affected": [{"fixed": "3.0.0"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2015-9251"]
+    },
+    {
+      "library": "bootstrap",
+      "id": "CVE-2019-8331",
+      "kind": "vulnerability",
+      "summary": "XSS in the tooltip or popover data-template attribute",
+      "affected": [{"fixed": "3.4.1"}, {"introduced": "4.0.0", "fixed": "4.3.1"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2019-8331", "https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/"]
+    },
+    {
+      "library": "bootstrap",
+      "id": "EOL",
+      "kind": "eol",
+      "summary": "Bootstrap 3 reached end of life on 2019-07-24 and Bootstrap 4 on 2023-01-01; no further security fixes",
+      "affected": [{"fixed": "5.0.0"}],
+      "references": ["https://github.com/twbs/release"]
+    },
+    {
+      "library": "lodash",
+      "id": "CVE-2021-23337",
+      "kind": "vulnerability",
+      "summary": "Command injection through the template function",
+      "affected": [{"fixed": "4.17.21"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2021-23337"]
+    },
+    {
+      "library": "lodash",
+      "id": "CVE-2019-10744",
+      "kind": "vulnerability",
+      "summary": "Prototype pollution through defaultsDeep",
+      "affected": [{"fixed": "4.17.12"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2019-10744"]
+    },
+    {
+      "library": "moment",
+      "id": "CVE-2022-31129",
+      "kind": "vulnerability",
+      "summary": "Inefficient RFC 2822 date parsing (ReDoS) on long user-supplied strings",
+      "affected": [{"introduced": "2.18.0", "fixed": "2.29.4"}],
+      "references": ["https://nvd.nist.gov/vuln/detail/CVE-2022-31129", "https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g"]
+    },
+    {
+      "library": "angularjs",
+      "id": "EOL",
+      "kind": "eol",
+      "summary": "AngularJS (1.x) support ended on 2021-12-31; no further security fixes",
+      "affected": [{"introduced": "1.0.0", "fixed": "2.0.0"}],
+      "references": ["https://docs.angularjs.org/misc/version-support-status"]
+    },
+    {
+      "library": "vue",
+      "id": "EOL",
+      "kind": "eol",
+      "summary": "Vue 2 reached end of life on 2023-12-31; no further security fixes",
+      "affected": [{"introduced": "2.0.0", "fixed": "3.0.0"}],
+      "references": ["https://v2.vuejs.org/eol/"]
+    }
+  ]
+}

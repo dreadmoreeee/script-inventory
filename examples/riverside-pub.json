@@ -1,0 +1,125 @@
+{
+  "tool": "script-inventory",
+  "version": "1.0.0",
+  "fail_on": "high",
+  "findings_at_or_above": 0,
+  "pages": [
+    {
+      "url": "https://demo.demarkstudio.ca/riverside-pub/site",
+      "final_url": "https://demo.demarkstudio.ca/riverside-pub/site",
+      "status": 200,
+      "error": null,
+      "scripts": [
+        {
+          "url": "https://demo.demarkstudio.ca/static/js/sitio.js?v=a856b994",
+          "frame_url": "https://demo.demarkstudio.ca/riverside-pub/site",
+          "main_frame": true,
+          "party": "first",
+          "domain": "demarkstudio.ca",
+          "vendor": null,
+          "category": null,
+          "size": 19865,
+          "status": 200,
+          "type": null,
+          "defer": true,
+          "module": false,
+          "nomodule": false,
+          "integrity": null,
+          "sri": "absent",
+          "sri_detail": "",
+          "crossorigin": null,
+          "nonce": false,
+          "in_dom": true,
+          "loaded_by": "html",
+          "libraries": [],
+          "sha256": null,
+          "error": null,
+          "async": false,
+          "inline": false
+        },
+        {
+          "url": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+          "frame_url": "https://demo.demarkstudio.ca/riverside-pub/site",
+          "main_frame": true,
+          "party": "third",
+          "domain": "cloudflareinsights.com",
+          "vendor": "Cloudflare Web Analytics",
+          "category": "analytics",
+          "size": null,
+          "status": null,
+          "type": "module",
+          "defer": false,
+          "module": true,
+          "nomodule": false,
+          "integrity": "sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==",
+          "sri": "unverified",
+          "sri_detail": "body not available: csp",
+          "crossorigin": "anonymous",
+          "nonce": false,
+          "in_dom": true,
+          "loaded_by": "html",
+          "libraries": [],
+          "sha256": null,
+          "error": "blocked by the page's Content-Security-Policy",
+          "async": false,
+          "inline": false
+        },
+        {
+          "url": "https://demo.demarkstudio.ca/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+          "frame_url": "https://demo.demarkstudio.ca/riverside-pub/site",
+          "main_frame": true,
+          "party": "first",
+          "domain": "demarkstudio.ca",
+          "vendor": null,
+          "category": null,
+          "size": 1239,
+          "status": 200,
+          "type": null,
+          "defer": false,
+          "module": false,
+          "nomodule": false,
+          "integrity": null,
+          "sri": "absent",
+          "sri_detail": "",
+          "crossorigin": null,
+          "nonce": false,
+          "in_dom": false,
+          "loaded_by": "html",
+          "libraries": [],
+          "sha256": null,
+          "error": null,
+          "async": false,
+          "inline": false
+        }
+      ],
+      "libraries": [],
+      "mixed_content": [],
+      "inline": {
+        "count": 0,
+        "with_nonce": 0,
+        "event_handler_elements": 0,
+        "javascript_urls": 0,
+        "data_blocks": 0,
+        "csp_header": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'none'; object-src 'none'",
+        "csp_meta": [],
+        "csp_script_src": "'self'",
+        "hint": "CSP restricts scripts. No inline scripts or inline event handlers: a strict CSP needs no nonces or hashes for inline code."
+      },
+      "frames": {
+        "inspected": [
+          "https://demo.demarkstudio.ca/riverside-pub/site"
+        ],
+        "skipped_cross_origin": []
+      },
+      "findings": [
+        {
+          "severity": "low",
+          "kind": "script-error",
+          "message": "script did not load: blocked by the page's Content-Security-Policy",
+          "url": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+          "references": []
+        }
+      ]
+    }
+  ]
+}
